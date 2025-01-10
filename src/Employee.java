@@ -56,11 +56,12 @@ public class Employee {
 
 
     //TODO: any other methods?
-    public void bonus(){
-        salary+=  (1.0/3*salary);
+    public double bonus(){
+         salary+=  (1.0/3*salary);
+        return salary;
     }
-    public void fee(){
-        salary-=  (1.0/4*salary);
+    public double  fee(){
+        return salary-=  (1.0/4*salary);
     }
     public void printInfo(){
         System.out.print(getName()+ " ");
