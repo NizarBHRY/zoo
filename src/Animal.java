@@ -2,11 +2,11 @@ public class Animal {
 
 
     //what information does each animal need?
-    private String name;
-    private String species;
-    private int age;
-    private String habitat;
-    private boolean alive;
+    protected String name;
+    protected String species;
+    protected int age;
+    protected String habitat;
+    protected boolean alive;
 
 
     //do I need to fill all instance variables for a class?
@@ -68,7 +68,12 @@ public class Animal {
         System.out.println(frank.makeNoise());
         System.out.println(deflt.makeNoise());
     }
+    public void putOutOfMisery(){
+        alive = false;
+    }
 
-
+    public String getName() {
+        return name;
+    }
 }
 
